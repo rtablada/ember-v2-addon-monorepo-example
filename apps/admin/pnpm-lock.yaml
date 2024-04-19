@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@my-co/shared-ui':
+        specifier: workspace:*
+        version: link:../../addons/shared-ui
     devDependencies:
       '@babel/core':
         specifier: ^7.24.4
