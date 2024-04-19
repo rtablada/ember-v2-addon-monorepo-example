@@ -4,7 +4,7 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "start:addons": "",
+    "start:addons": "pnpm -F @my-co/shared-ui start",
 
     "start:apps:admin": "pnpm -F @my-co/admin start",
     "start:apps": "concurrently \"pnpm:start:apps:*\" --names \"start:apps:\"",
