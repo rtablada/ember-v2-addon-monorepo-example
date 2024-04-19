@@ -1,3 +1,14 @@
 {
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start:addons": "",
+
+    "start:apps:admin": "pnpm -F @my-co/admin start",
+    "start:apps": "concurrently \"pnpm:start:apps:*\" --names \"start:apps:\"",
+
+    "start": "concurrently \"pnpm:start:addons\" \"pnpm:start:apps\" --names \"start:addons,start:apps\""
+  }
 }
